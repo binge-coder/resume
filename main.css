@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+html {
+    font-family: 'Nunito', sans-serif;
+    background-color: wheat;
+}
+.onBackground {
+    background-image: url('clouds.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-size: 4em ;
+    text-align: center;
+    padding: 470px 0 100px 0;
+    color: wheat;
+}
+
+.gridContainer {
+    border: 2px solid black;
+    border-radius: 7px;
+    margin: 5px 0px;
+    padding: 5px 7px;
+    display: grid;
+    grid-template-areas: 
+    "myleft myright"
+    "myfooter myfooter";
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+}
+h2 {
+    color: indianred;
+}
+.myleft {
+    grid-area: myleft;
+}
+
+.myright {
+    grid-area: myright;
+    border-left: 1px solid black;
+    padding: 5px;
+}
+.myright h3 {
+    text-align: center;
+}
+.contactTable {
+    margin: 0px auto;    
+}
+.contactLinks a {
+    display: inline-block;
+    height: 30px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 6px;    
+    text-align: center;
+    text-decoration: none;
+    left: 10px;
+    position: relative;
+    
+    background-color: tomato;
+    color: white;
+}
+.contactLinks a:hover {
+    background-color: white;
+    color: black;
+}
+.myfooter {
+    grid-area: myfooter;
+    color: black;
+    font-size: small;
+    /* background-color: black; */
+
+}
+
