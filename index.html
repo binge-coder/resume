@@ -14,8 +14,14 @@
   </video>
 </div>
     
-  <div>
+  <div id="myText" style="display: none;">
     <p>If you want to see that badly designed webpage I made for my web technologies practical in college then it is here : <a href="./old-stuff.html">viewer descretion advised, cuz it contains nasty corporate like posturing</a></p>
   </div>
 </body>
+<script>
+  // write script to make the div with id="myText" appear after 4 seconds
+  setTimeout(() => {
+    document.getElementById("myText").style.display = "block";
+  }, 4000);
+</script>
 </html>
